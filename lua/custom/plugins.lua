@@ -10,6 +10,7 @@ local plugins = {
     opt = {
       ensure_installed = {
         "pyright",
+        "clangd",
       },
     },
   },
@@ -19,7 +20,13 @@ local plugins = {
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
     end
-  }
+  },
+  {
+    "max397574/better-escape.nvim",
+    config = function()
+      require("better_escape").setup()
+    end,
+  },
 }
 
 return plugins
