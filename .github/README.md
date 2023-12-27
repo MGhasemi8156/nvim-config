@@ -9,3 +9,7 @@
 - `git`
 ### python
 - pyright: `pip install pyright`
+
+### go
+- gopls: `go install golang.org/x/tools/gopls@latest`
+- delve: `go install github.com/go-delve/delve/cmd/dlv@latest`
