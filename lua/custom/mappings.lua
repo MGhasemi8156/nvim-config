@@ -1,5 +1,19 @@
 local M = {}
 
+M.general = {
+  plugin = false;
+  n = {
+    ["<A-j>"] = {
+      "15j",
+      "Move 15 lines down"
+    },
+    ["<A-k>"] = {
+      "15k",
+      "Move 15 lines up"
+    },
+  },
+}
+
 M.dap = {
   plugin = true,
   n = {
