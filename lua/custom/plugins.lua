@@ -24,6 +24,17 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+  {
+    'MeanderingProgrammer/markdown.nvim',
+    name = 'render-markdown', -- Only needed if you have another plugin named markdown.nvim
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
+    init = function ()
+      require("core.utils").load_mappings("markdown")
+    end,
+    config = function()
+      require('render-markdown').setup({})
+    end,
+  },
 }
 
 return plugins

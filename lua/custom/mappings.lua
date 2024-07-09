@@ -1,7 +1,7 @@
 local M = {}
 
 M.general = {
-  plugin = false;
+  plugin = false,
   n = {
     ["<A-j>"] = {
       "15j",
@@ -10,6 +10,18 @@ M.general = {
     ["<A-k>"] = {
       "15k",
       "Move 15 lines up"
+    },
+  },
+}
+
+M.markdown = {
+  plugin = true,
+  n = {
+    ["md"] = {
+      function ()
+        require('render-markdown').toggle();
+      end,
+      "Toggle markdown render"
     },
   },
 }
