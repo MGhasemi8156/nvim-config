@@ -7,6 +7,7 @@
 ## Requirements
 - `neovim>=v0.9.0`
 - `git`
+- NerdFonts(Hack Nerd Font is prefered)
 ### python
 - pyright: `pip install pyright`
 
