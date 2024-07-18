@@ -17,3 +17,5 @@ require('render-markdown').setup({
         foregrounds = { 'markdownH1', 'markdownH2', 'markdownH3', 'markdownH4', 'markdownH5', 'markdownH6' },
     },
 })
+
+ require("dapui").setup()

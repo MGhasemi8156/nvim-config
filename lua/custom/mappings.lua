@@ -41,14 +41,6 @@ M.dap = {
       "<cmd> DapStepOver <CR>",
       "Debugger go next"
     },
-    ["<leader>dus"] = {
-      function ()
-        local widgets = require('dap.ui.widgets');
-        local sidebar = widgets.sidebar(widgets.scopes);
-        sidebar.open();
-      end,
-      "Open debugging sidebar"
-    }
   }
 }
 
@@ -66,7 +58,19 @@ M.dap_go = {
         require('dap-go').debug_last()
       end,
       "Debug last go test"
-    }
+    },
+  }
+}
+
+M.dap_ui = {
+  plugin = true,
+  n = {
+     ["<leader>dus"] = {
+      function()
+        require('dapui').toggle()
+      end,
+      "Toggle debugger sidebar"
+    },
   }
 }
 
